@@ -10,7 +10,8 @@ const params = await props.params;
     fetchInvoiceById(id),
     fetchCustomers(),
   ]);
-
+  console.log(id);
+  
   if (!invoice) {
     notFound();
   }
